@@ -1,4 +1,4 @@
-name: "Zmicro Vercel Deploy"
+name: "Vercel Deploy"
 description: "github action for vercel deploy"
 author: "Zero <GitHub: whatwewant>"
 branding:
@@ -38,13 +38,6 @@ outputs:
 runs:
   using: composite
   steps:
-    - name: Set up Zmicro
-      uses: zmicro-design/action-setup-zmicro@v1
-
-    # - name: Set up Pipeline
-    #   shell: bash
-    #   run: zmicro package install pipeline
-
     - name: Vercel Prepare
       shell: bash
       run: |
