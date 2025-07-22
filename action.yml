@@ -38,6 +38,12 @@ outputs:
 runs:
   using: composite
   steps:
+    - name: Setup Node.js
+      id: setup-node
+      uses: actions/setup-node@v4
+      with:
+        node-version: v20
+
     - name: Vercel Prepare
       shell: bash
       run: |
